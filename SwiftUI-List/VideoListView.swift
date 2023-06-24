@@ -35,6 +35,7 @@ struct VideoListView: View {
                 }
                 .padding(-10)
             }
+            .listStyle(.plain)
             .navigationTitle("Sean's top 10")
         }
     }
