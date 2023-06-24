@@ -45,15 +45,24 @@ struct VideoDetailView: View {
             Spacer()
             
             Link(destination: video.url, label: {
-                Text("Watch now")
-                    .bold()
-                    .font(.title2)
-                    .frame(width: 280, height: 50)
-                    .background(Color(.systemRed))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                StandartButton(title: "Watch now")
             })
         }
+    }
+}
+
+struct StandartButton: View{
+    
+    var title: String
+    
+    var body: some View {
+        Text(title)
+            .bold()
+            .font(.title2)
+            .frame(width: 280, height: 50)
+            .background(Color(.systemRed))
+            .foregroundColor(.white)
+            .cornerRadius(10)
     }
 }
 
